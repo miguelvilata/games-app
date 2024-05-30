@@ -24,7 +24,9 @@ import com.miguel.vilata.heros_app.viewModel.GamesViewModel
 fun HomeView(viewModel: GamesViewModel, navController: NavController) {
     Scaffold(
         topBar = {
-            MainTopBar(title = "API GAMES", true) {}
+            MainTopBar(title = "API GAMES", onClickBackButton = {}) {
+                navController.navigate("SearchGameView")
+            }
         }
     ) {
         ContentHomeView(viewModel, it, navController)
