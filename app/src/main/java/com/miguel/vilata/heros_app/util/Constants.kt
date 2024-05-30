@@ -5,6 +5,9 @@ class Constants {
     companion object {
         const val BASE_URL: String = "https://api.rawg.io/api/"
         const val END_POINT = "games"
-        const val API_KEY = "?KEY=176671a1699f4c3ea0fb1c6297db6c4a"
+        const val API_KEY = "?key=2b66c127dcfd483caeb806e4de080f76"
+        const val CUSTOM_BLACK: Int = 0xFF2B2626.toInt()
     }
+
+
 }

@@ -8,6 +8,7 @@ import androidx.activity.viewModels
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
+import com.miguel.vilata.heros_app.navigation.NavManager
 import com.miguel.vilata.heros_app.ui.theme.HerosappTheme
 import com.miguel.vilata.heros_app.viewModel.GamesViewModel
 import com.miguel.vilata.heros_app.views.HomeView
@@ -22,7 +23,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             HerosappTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    HomeView(viewModel)
+                    NavManager(viewModel)
                 }
             }
         }

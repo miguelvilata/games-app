@@ -8,5 +8,5 @@ data class GamesModel(
 data class GameList(
     val id: Int,
     val name: String,
-    val backgroundImage: String,
+    val background_image: String,
 )
