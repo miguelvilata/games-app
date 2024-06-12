@@ -10,6 +10,7 @@ import androidx.navigation.navArgument
 import com.miguel.vilata.heros_app.viewModel.GamesViewModel
 import com.miguel.vilata.heros_app.views.DetailView
 import com.miguel.vilata.heros_app.views.HomeView
+import com.miguel.vilata.heros_app.views.SearchGameView
 
 @Composable
 fun NavManager(viewModel: GamesViewModel){
@@ -18,11 +19,16 @@ fun NavManager(viewModel: GamesViewModel){
         composable("Home"){
             HomeView(viewModel, navController)
         }
+
         composable("DetailView/{id}", arguments = listOf(
             navArgument("id") { type = NavType.IntType }
         )){
             val id = it.arguments?.getInt("id") ?: 0
             DetailView(viewModel, navController, id)
+        }
+
+        composable("SearchGameView") {
+            SearchGameView(viewModel = viewModel, navController)
         }
     }
 }

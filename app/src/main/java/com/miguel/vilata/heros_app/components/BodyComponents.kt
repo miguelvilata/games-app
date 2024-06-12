@@ -30,7 +30,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.rememberImagePainter
@@ -40,7 +39,7 @@ import com.miguel.vilata.heros_app.util.Constants.Companion.CUSTOM_GREEN
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun MainTopBar(title: String, showBackButton: Boolean = false, onClickBackButton: () -> Unit,onClickAction: () -> Unit) {
+fun MainTopBar(title: String, showBackButton: Boolean = false, onClickBackButton: () -> Unit, onClickAction: () -> Unit) {
     TopAppBar(
         title = { Text(text = title, color = Color.White, fontWeight = FontWeight.ExtraBold) },
         colors = TopAppBarDefaults.mediumTopAppBarColors(
@@ -70,7 +69,6 @@ fun MainTopBar(title: String, showBackButton: Boolean = false, onClickBackButton
         }
     )
 }
-
 
 @Composable
 fun CardGame(game: GameList, onClick: () -> Unit) {
