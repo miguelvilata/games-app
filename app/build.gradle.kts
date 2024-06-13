@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.miguel.vilata.heros_app"
+    namespace = "com.pepisoft.heros_app"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.miguel.vilata.heros_app"
+        applicationId = "com.pepisoft.heros_app"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

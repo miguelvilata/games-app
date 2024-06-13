@@ -1,4 +1,4 @@
-package com.miguel.vilata.heros_app
+package com.pepisoft.heros_app
 
 import org.junit.Test
 
